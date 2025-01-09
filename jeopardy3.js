@@ -11,7 +11,7 @@ $("#play").on("click", handleClickOfPlay);
 // Makes start button not clickable once clicked
 async function handleClickOfPlay() {
   if (isPlayButtonClickable) {
-    isPlayButtonClickable = false;
+    isPlayButtonClickable = true;
     await setupTheGame();
   }
 }
@@ -24,7 +24,7 @@ async function setupTheGame() {
   $("#categories").empty();
   $("#clues").empty();
   $("#play").text("Restart");
-  $("#active-clue").empty();
+  $("#active-clue").text("Question Appears Here");
   categories = [];
 
   // Fetch game data

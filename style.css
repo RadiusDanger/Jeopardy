@@ -1,19 +1,5 @@
-/*
-  Some colors you may find useful:
-  #115ff4
-  #060ce9
-  #28a200
-  #8d2ab5
-  #74119c
-*/
-
 .disabled {
   display: none;
-}
-
-.viewed {
-  text-decoration: line-through;
-  color: #8d2ab5;
 }
 body {
   background-color: #115ff4;
@@ -34,8 +20,8 @@ td {
   font-size: 2rem;
 }
 td:hover {
-  background-color: #8d2ab5;
-  color: white;
+  background-color: yellow;
+  color: black;
   cursor: pointer;
 }
 th {
@@ -47,7 +33,7 @@ th {
 }
 #active-clue {
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   text-align: center;
   padding: 10px 30px;
   cursor: pointer;
@@ -66,4 +52,7 @@ h1 {
 }
 h2 {
   text-align: center;
+}
+.clue.viewed {
+  background-color: darkblue;
 }
